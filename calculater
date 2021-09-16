@@ -1,0 +1,51 @@
+class Calculater
+  {
+     int add(int a, int b)
+     {
+        int c;
+        c=a+b;
+        return c;
+     }
+     int sub(int d, int f)
+     {
+        int g;
+        g=d-f;
+        return g;
+     }
+    int mul(int h, int i)
+     {
+        int j;
+        j=h*i;
+        return j;
+     }
+     int div(int s,int r)
+     {
+        int z;
+        z=s/r;
+        return z;
+     }
+     int modulo(int x,int y)
+     {
+        int v;
+        v=x % y;
+        return v;
+     }
+}
+
+class Calculateroper
+{
+   public static void main(String args[])
+   {
+     Calculater calc=new Calculater();
+     int sum=calc.add(23,25);
+     int diff=calc.sub(25,23);
+     int multi=calc.mul(2,3);
+     int divis=calc.div(2,2);
+     int modulo=calc.modulo(5,2);
+     System.out.println("sum of a and b is "+sum);
+     System.out.println("difference is "+diff);
+     System.out.println("multiplication is "+multi);
+     System.out.println("division is "+divis);
+     System.out.println("modulo is "+modulo);
+   }
+}
